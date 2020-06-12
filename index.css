@@ -18,8 +18,8 @@ body {
 }
 
 h1 {
+  color: white;
   text-align: center;
-  padding-top: 8%;
   text-shadow: 1px 1px 2px black, 0 0 25px	#ffff99, 0 0 5px 	#ffff99;
   font-family: Ubuntu Mono;
 }
@@ -52,33 +52,42 @@ body, html {
 }
 
 i{
-  color: #b30047;
+  color: #463E6D;
 }
 
 
 
-/* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
-}
+#fade-in h1 {
+  display: inline-block;
+  color: black;
+  text-transform: none;
+  margin: 0 20px;
+  opacity: 0.0;
+  animation: fadeIn ease 10s;
+  -webkit-animation: fadeIn ease 10s;
+  }
+  
+  @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
